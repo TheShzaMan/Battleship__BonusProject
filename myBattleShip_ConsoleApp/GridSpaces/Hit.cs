@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace myBattleShip_ConsoleApp.GridSpaces
+namespace myBattleShip_ConsoleApp
 {
     public class Hit : GridSpace
     {
@@ -12,6 +12,7 @@ namespace myBattleShip_ConsoleApp.GridSpaces
         public Hit()
         {
             TypeDisplay = "[X]|";
+            
             
         }
 

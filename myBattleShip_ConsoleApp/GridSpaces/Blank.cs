@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace myBattleShip_ConsoleApp.GridSpaces
+namespace myBattleShip_ConsoleApp
 {
     public class Blank : GridSpace
     {

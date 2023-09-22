@@ -15,9 +15,20 @@ namespace myBattleShip_ConsoleApp
     {
         static void Main(string[] args)
         {
-            GameBoard gameBoard = new GameBoard();
-
+            Game game = new Game();
+            game.PlayerOne.DisplayBoard(game.PlayerOne.MyBoard);
             
+            Console.WriteLine("Make selection (letter, number)");
+            Console.Read(); //circle back for good location for this and add connection to user input and program
+
+            //DisplayHit(3, 3);
+            //GridSpace userInput = new Hit();
+            //game.PlayerOne.MyBoard.DisplayHit [4][9] = userInput;
+            game.PlayerOne.EnemyBoard.Grid[4][10] = new Hit();
+            game.PlayerOne.DisplayBoard(game.PlayerOne.EnemyBoard);
+
+
+
 
 
             //T[,] gameBoard = new T[rows, columns];
