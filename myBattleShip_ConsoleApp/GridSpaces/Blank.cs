@@ -11,13 +11,14 @@ namespace myBattleShip_ConsoleApp
         
         public Blank()
         {
-            TypeDisplay = "   |";
+            TypeDisplay = "~ ~ ";
             
         }
 
         public override string DisplayToGrid()
         {
-            
+            Console.ForegroundColor = ConsoleColor.DarkCyan;
+
             return TypeDisplay;
         }
 

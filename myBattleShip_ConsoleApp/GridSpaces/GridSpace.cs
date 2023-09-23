@@ -15,8 +15,8 @@ namespace myBattleShip_ConsoleApp
         }
         public virtual string DisplayToGrid()
         {
-            //return symbol to be displayed on game board
-            return " ";
+            
+           return " ";
         }
     }
 }

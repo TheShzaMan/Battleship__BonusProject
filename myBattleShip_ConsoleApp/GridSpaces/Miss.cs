@@ -6,19 +6,20 @@ using System.Threading.Tasks;
 
 namespace myBattleShip_ConsoleApp
 {
-    public class Hit : GridSpace
+    public class Miss : GridSpace
     {
-        public Hit()
+
+        public Miss()
         {
-            TypeDisplay = "[X] ";
+            TypeDisplay = "}*{ ";
+
         }
 
         public override string DisplayToGrid()
         {
-            Console.ForegroundColor = ConsoleColor.Red;
-            
+            Console.ForegroundColor = ConsoleColor.White;
             return TypeDisplay;
-            
         }
+
     }
 }

@@ -18,8 +18,11 @@ namespace myBattleShip_ConsoleApp
         {
             Name = name;
             //List<GridSpace> typesOfGridSpaces = new List<GridSpace>() { Blank, Hit, Miss, Ship, ShipFront, ShipRear};
-            columnNames = new string[11] { null, "  A", "B", "C", "D", "E", "F", "G", "H", "I", "J" };
-            rowNames = new string[11] { null, " 1 |", " 2 |", " 3 |", " 4 |", " 5 |", " 6 |", " 7 |", " 8 |", " 9 |", "10 |" };
+            //columnNames = new string[11] { null, "  A", "B", "C", "D", "E", "F", "G", "H", "I", "J" };
+            columnNames = new string[11] { null, "  1", "2", "3", "4", "5", "6", "7", "8", "9", "10" };
+            //rowNames = new string[11] { null, " 1  ", " 2  ", " 3  ", " 4  ", " 5  ", " 6  ", " 7  ", " 8  ", " 9  ", " 10 " };
+            rowNames = new string[11] { null, " A  ", " B  ", " C  ", " D  ", " E  ", " F  ", " G  ", " H  ", " I  ", " J  " };
+            //rowNames = new string[11] { null, " 1 |", " 2 |", " 3 |", " 4 |", " 5 |", " 6 |", " 7 |", " 8 |", " 9 |", "10 |" };
             Grid = new List<List<GridSpace>>();
             for (int i = 0; i < 11; i++)
             {
