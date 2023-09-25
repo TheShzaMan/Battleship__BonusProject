@@ -8,16 +8,18 @@ namespace myBattleShip_ConsoleApp
 {
     public class Blank : GridSpace
     {
+
         
         public Blank()
         {
-            TypeDisplay = "~ ~ ";
-            
+            isAvailable = true;
+            TypeDisplay = " ~  ";
+            SpaceType = "blank";
         }
 
         public override string DisplayToGrid()
         {
-            Console.ForegroundColor = ConsoleColor.DarkCyan;
+            Console.ForegroundColor = ConsoleColor.DarkBlue;
 
             return TypeDisplay;
         }

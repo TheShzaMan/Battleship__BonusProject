@@ -15,8 +15,9 @@ namespace myBattleShip_ConsoleApp
         {
             this.verticalOrHorizontal = verticalOrHorizontal;
             TypeDisplay = "";
-            Vertical = " | | ";
-            Horizontal = "][][";
+            Vertical = "|#| ";
+            Horizontal = "[#] ";
+            SpaceType = "ship";
         }
         public override string DisplayToGrid()
         {
@@ -31,7 +32,7 @@ namespace myBattleShip_ConsoleApp
             }
             else
             {
-                throw new Exception("Invalid parameter. Only top, bottom, left or right");
+                throw new Exception("Invalid parameter. Only 'vertical' or 'horizontal'");
             }
             return TypeDisplay;
         }

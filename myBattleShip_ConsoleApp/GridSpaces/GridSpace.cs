@@ -9,9 +9,11 @@ namespace myBattleShip_ConsoleApp
     public abstract class GridSpace
     {
         public string TypeDisplay;
-
+        public string SpaceType;
+        public bool isAvailable;
         public GridSpace()
         {
+            isAvailable = false;
         }
         public virtual string DisplayToGrid()
         {

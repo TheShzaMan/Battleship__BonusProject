@@ -11,6 +11,7 @@ namespace myBattleShip_ConsoleApp
         public Hit()
         {
             TypeDisplay = "[X] ";
+            SpaceType = "hit";
         }
 
         public override string DisplayToGrid()

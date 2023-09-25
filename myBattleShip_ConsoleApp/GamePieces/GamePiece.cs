@@ -6,14 +6,28 @@ using System.Threading.Tasks;
 
 namespace myBattleShip_ConsoleApp
 {
-    abstract class GamePiece 
+    public abstract class GamePiece 
     {
+        public string Id;
         public string Name;
-        public List<GridSpace> Ship;
-        public GamePiece(string name)
+        public List<GridSpace> HorizontalShip;
+        public List<GridSpace> VerticalShip;
+        public GamePiece()
         {
-            Name = name;
-            Ship = new List<GridSpace>();
+            string horizontalId = "h";
+            string verticalId = "v";
+            Name = "";
+            HorizontalShip = new List<GridSpace>();
+            VerticalShip = new List<GridSpace>();
+          
+        }
+        public virtual List<GridSpace> MakeHorizontal()
+        {
+            return HorizontalShip;
+        }
+        public virtual List<GridSpace> MakeVertical()
+        {
+            return VerticalShip;
         }
     }
 }

@@ -14,14 +14,15 @@ namespace myBattleShip_ConsoleApp
         private string Bottom;
         private string Left;
         private string Right;
-        public ShipEnd(string shipEnd)
+        public ShipEnd(string topBottomLeftRight)
         {
-            this.shipEnd = shipEnd;
+            this.shipEnd = topBottomLeftRight;
             TypeDisplay = "    ";
-            Top = @" /\ ";
-            Bottom = @" \/ ";
-            Left = " <{]";
-            Right = "[}> ";
+            Top = @"/#\ ";
+            Bottom = @"\V/ ";
+            Left = "<{# ";
+            Right = "#}> ";
+            SpaceType = "ship";
         }
         public override string DisplayToGrid()
         {

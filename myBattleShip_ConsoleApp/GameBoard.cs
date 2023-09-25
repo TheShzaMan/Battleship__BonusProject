@@ -34,14 +34,16 @@ namespace myBattleShip_ConsoleApp
                 }
             }
         }
-            
-           
-        
-       
-        public void DisplayHit(int letterX, int numberY)
+        public List<GridSpace> this[int index]
         {
-            //GridSpace userInput = new Hit();
-            //PlayArea[letterX][letterY] = 
+            get
+            {
+                return Grid[index];
+            }
+            set
+            {
+                Grid[index] = value;
+            }
         }
     }
 }

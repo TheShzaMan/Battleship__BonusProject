@@ -11,7 +11,8 @@ namespace myBattleShip_ConsoleApp
 
         public Miss()
         {
-            TypeDisplay = "}*{ ";
+            TypeDisplay = ")*( ";
+            SpaceType = "miss";
 
         }
 
